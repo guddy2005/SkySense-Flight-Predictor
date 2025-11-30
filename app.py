@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-import pandas as pd # Pandas import zaroori hai fix ke liye
+import pandas as pd
 
 # --- 1. Page Config & Setup ---
 st.set_page_config(
@@ -41,9 +41,9 @@ except FileNotFoundError:
 
 # --- 3. Main Layout ---
 
-# >>> HEADER IMAGE (FIXED WARNING) <<<
+# >>> HEADER IMAGE (FIXED: width="stretch") <<<
 st.image("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200&h=400&auto=format&fit=crop", 
-         use_container_width=True) # New streamlit version supports this, agar warning aaye toh ignore karein
+         width="stretch") 
 
 st.title("✈️ SkySense: AI-Powered Flight Delay Predictor")
 st.markdown("Plan smarter travel. Use machine learning to estimate the probability of flight delays based on historical patterns.")
@@ -68,7 +68,7 @@ with col_form:
         submit = st.form_submit_button("Analyze Risk 🚀")
 
     if submit:
-        # >>> FIX: Using DataFrame to silence Scikit-Learn Warnings <<<
+        # >>> FIX: Creating DataFrame to silence Warning <<<
         features = pd.DataFrame([[airline_val, month, distance, dep_time]], 
                                 columns=['Airline', 'Month', 'Distance', 'DepTime'])
         
