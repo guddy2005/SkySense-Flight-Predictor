@@ -10,7 +10,7 @@
 ## 📸 Application Preview
 Here is a glimpse of the deployed application predicting flight delays in real-time.
 
-![SkySense](demo.png)
+![preview](SkySense/demo.png)
 
 > **[Click Here to Try the Live App 🚀](https://skysense-flight-predictor.streamlit.app/)**
 ## 📖 Overview
