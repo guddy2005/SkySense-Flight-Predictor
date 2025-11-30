@@ -7,6 +7,12 @@
 
 > **Note:** Above badges represent the tech stack used in this project.
 
+## 📸 Application Preview
+Here is a glimpse of the deployed application predicting flight delays in real-time.
+
+![SkySense](demo.png)
+
+> **[Click Here to Try the Live App 🚀](https://skysense-flight-predictor.streamlit.app/)**
 ## 📖 Overview
 **SkySense** is an end-to-end Machine Learning web application designed to predict flight delays in real-time. By leveraging historical aviation data and weather patterns, the system utilizes **Ensemble Learning techniques (Random Forest)** to provide travelers with accurate delay probabilities.
 
